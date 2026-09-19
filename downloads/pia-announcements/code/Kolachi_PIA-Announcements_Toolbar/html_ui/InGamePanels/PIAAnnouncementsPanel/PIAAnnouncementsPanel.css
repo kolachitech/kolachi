@@ -1,0 +1,234 @@
+/** This mixin makes a single line element fit exactly on the Roboto font for easier integration. */
+:root {
+  --imgUrlWatermark: url("https://kolachitech.github.io/kolachi/images/PIA-Announcements/watermark.png");
+   --imgUrlBtnBg: url("https://kolachitech.github.io/kolachi/images/PIA-Announcements/btnBg.png");
+  --imgUrlPre: url("https://kolachitech.github.io/kolachi/images/PIA-Announcements/category-1.png");
+  --imgUrlDuring: url("https://kolachitech.github.io/kolachi/images/PIA-Announcements/category-2.png");
+  --imgUrlPost: url("https://kolachitech.github.io/kolachi/images/PIA-Announcements/category-3.png");
+  --colorDarkGreen: #061C0E;
+  --colorBtnNormal: #082b14f9;
+  --colorBtnDark: #2e302f;
+  --colorBtnDarkHover: #161f1b;
+  --colorBtnHover: #0B371B;
+  --colorBtnDisabled: #888;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    background-color: var(--colorDarkGreen);
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+#PIAAnnouncementsFrame {
+  position: fixed;
+  inset: 0;
+}
+
+#PIAAnnouncementsFrame,
+#PIAAnnouncementsFrame .ingameUiContent,
+#PIAAnnouncementsFrame .ingameUiContentWrapper,
+ingame-ui .ingameUiContent,
+ingame-ui .ingameUiContentWrapper {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  background: #061C0E !important;
+}
+.fs-root {
+  text-align: right;
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 52px);
+  min-height: 0;
+  padding: 10px 14px 12px;
+  overflow: hidden;
+  color: #f7f9ff;
+  background-color: var(--colorDarkGreen);
+  background-image: var(--imgUrlWatermark);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+div.category {
+    padding-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 184px 75px;
+}
+.preFlight {
+    margin-top: 25px;
+    background-image: var(--imgUrlPre);
+}
+.duringFlight {
+    background-image: var(--imgUrlDuring);
+}
+.conclude {
+    background-image: var(--imgUrlPost);
+    padding-bottom: 15px;
+}
+button.play-button {
+    margin: 0px 3px 3px 0px;
+    border: beige 1px solid;
+    border-right: white 9px solid;
+    font-size: medium;
+    color: white;
+    background-color: var(--colorBtnNormal);
+    width: 130px;
+    height: 100px;
+}
+button.play-button.dark {
+    color: whitesmoke;
+    background-color: var(--colorBtnDark);
+}
+button.play-button.dark:hover {
+    color: whitesmoke;
+    background-color: var(--colorBtnDarkHover);
+}
+button.play-button:hover {
+    color: white;
+    background-color: var(--colorBtnHover);
+    background-image: var(--imgUrlBtnBg);
+}
+button.disabled, 
+button.disabled:hover,
+button.play-button.dark,
+button.play-button.dark:hover {
+    border: lightgray 1px solid;
+    color: lightgray;
+    font-style: italic;
+    background-color: var(--colorBtnDisabled);
+    background-image: var(--imgUrlBtnBg);
+}
+
+ingame-ui#PIAAnnouncementsPanel {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  height:100% !important;
+  width: 100% !important;
+  /*border: 2px solid blue !important;*/
+}
+ingame-ui#PIAAnnouncementsPanel #PIAAnnouncementsPanelWrap {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  height: 100% !important;
+  /*border: 2px solid red !important;*/
+  min-height: 0;
+  min-width: 0;
+  overflow:hidden;
+  align-items: stretch !important;
+  flex: 1 1 auto !important;
+}
+ingame-ui#PIAAnnouncementsPanel #PIAAnnouncementsPanelWrap #PIAAnnouncementsPanelIframe {
+  flex: 1 1 auto !important;
+  border: 0;
+}
+ingame-ui#PIAAnnouncementsPanel #MainDisplay.hidden {
+  display: none;
+}
+ingame-ui#PIAAnnouncementsPanel #Footer.hidden {
+  display: none;
+}
+ingame-ui#PIAAnnouncementsPanel .ingameUiContent {
+  /*border: 2px solid green !important;*/
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  overflow:hidden !important;
+  align-items: stretch !important;
+  flex: 1 1 auto !important;
+}
+ingame-ui#PIAAnnouncementsPanel .ingameUiWrapper {
+  /*border: 2px solid yellow !important;*/
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  overflow:hidden !important;
+  align-items: stretch !important;
+  flex: 1 1 auto !important;
+}
+
+.fs-error {
+  color: #f44336;
+  font-weight: bold;
+  font-size: xx-large;
+}
+.fs-warning {
+  color: #ff9800;
+  font-style: italic;
+  font-size: larger;
+}
+.fs-info {
+  background: white;
+  color: #0F4E25;
+  font-size: large;
+}
+
+/* Panel Logo */
+.fs-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.14);
+  flex-shrink: 0;
+}
+
+.fs-logo-kolachi {
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+}
+
+.fs-logo-kolachi img {
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.fs-logo-kolachi::before {
+  content: none !important;
+}
+.pnl-title {
+  font-family: Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+.pnl-content, .pnl-status {
+  font-size: small;
+  color: whitesmoke;
+}
+.pnl-status {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.09);
+  padding: 3px;
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1;
+  font-weight: 850;
+  overflow: hidden;
+}
+div.url {
+  font-size: small;
+  color: whitesmoke;
+  margin: 3px 0;
+}

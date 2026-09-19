@@ -1,0 +1,34 @@
+{
+  "content": [
+    {
+      "path": "html_ui/Icons/Toolbar/ICON_TOOLBAR_PIAANNOUNCEMENTS.png",
+      "size": 23538,
+      "date": 134243319321284103
+    },
+    {
+      "path": "html_ui/Icons/Toolbar/ICON_TOOLBAR_PIAANNOUNCEMENTS.svg",
+      "size": 22440,
+      "date": 134243318975915853
+    },
+    {
+      "path": "html_ui/InGamePanels/PIAAnnouncementsPanel/PIAAnnouncementsPanel.css",
+      "size": 2467,
+      "date": 134244915152122593
+    },
+    {
+      "path": "html_ui/InGamePanels/PIAAnnouncementsPanel/PIAAnnouncementsPanel.html",
+      "size": 1350,
+      "date": 134235313959712851
+    },
+    {
+      "path": "html_ui/InGamePanels/PIAAnnouncementsPanel/PIAAnnouncementsPanel.js",
+      "size": 9022,
+      "date": 134244933361809389
+    },
+    {
+      "path": "InGamePanels/kolachi-announcements.spb",
+      "size": 718,
+      "date": 134243306300000001
+    }
+  ]
+}
