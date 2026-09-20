@@ -1,7 +1,13 @@
 > [!NOTE]
 > Declined but can still be downloaded from the GitHub URLs in the description.
 
-[Flightsim.to] https://flightsim.to/addon/115481/ingame-panel-pia-announcements (May get deactivated in future)
+![Screenshot](1-Screenshot.jpg)
+
+![Screenshot](2-Screenshot.jpg)
+
+![Process](3-Process.png)
+
+[Flightsim.to] https://flightsim.to/addon/115481/ingame-panel-pia-announcements (May get deleted in future)
 
 [PIA Announcements In-game Panel] https://github.com/kolachitech/kolachi/blob/main/downloads/pia-announcements/Kolachi_PIA-Announcements_Toolbar.zip
 
