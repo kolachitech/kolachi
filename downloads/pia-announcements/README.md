@@ -1,5 +1,5 @@
 > [!NOTE]
-> Declined but can still be downloaded from the GitHub URLs in the description.
+> Declined by Flightsim.to but can still be downloaded from the GitHub URLs in the description.
 
 ![Screenshot](1-Screenshot.jpg)
 
